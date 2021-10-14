@@ -2,6 +2,7 @@ package parser;
 
 import command.Command;
 import command.LocationCommand;
+import command.MarksCommand;
 import command.DummyCommand;
 import constant.CommandKeyWords;
 import constant.ErrorMessage;
@@ -28,8 +29,23 @@ public class Parser {
             this.content = result[2].trim();
 
             return new LocationCommand(this.taskNo, this.content);
+
+            case MARKS:
+                if (result.length < 2) {
+                    throw new ErrorHandler(ErrorMessage.EMPTY_TASK_NUMBER);
+                }
+                this.taskNo = result[1].trim();
+
+                if (result.length < 3) {
+                    throw new ErrorHandler(ErrorMessage.EMPTY_ASSIGNMENT_MARKS);
+                }
+                this.content = result[2].trim();
+
+                return new MarksCommand(this.taskNo, this.content);
+
         default:
             return new DummyCommand();
         }
+
     }
 }

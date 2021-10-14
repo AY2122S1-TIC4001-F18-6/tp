@@ -8,4 +8,9 @@ public class ErrorMessage {
     public static final String INVALID_TASK_NUMBER = "OOPS!!! I'm sorry, you have provided a invalid task number.";
     public static final String EMPTY_TASK_NUMBER = "OOPS!!! The task number cannot be empty.";
     public static final String EMPTY_LOCATION_DESCRIPTION = "OOPS!!! The appointment location cannot be empty.";
+    public static final String EMPTY_ASSIGNMENT_MARKS = "OOPS!!! Assignment marks cannot be empty.";
 }
+
+
+
+
