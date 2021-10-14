@@ -1,9 +1,9 @@
 package parser;
 
 import command.Command;
+import command.DummyCommand;
 import command.LocationCommand;
 import command.MarksCommand;
-import command.DummyCommand;
 import constant.CommandKeyWords;
 import constant.ErrorMessage;
 import exception.ErrorHandler;
@@ -17,19 +17,17 @@ public class Parser {
         CommandKeyWords commandWord = CommandKeyWords.getEnum(result[0].toUpperCase());
 
         switch (commandWord) {
-        case LOCATION:
-            if (result.length < 2) {
-                throw new ErrorHandler(ErrorMessage.EMPTY_TASK_NUMBER);
-            }
-            this.taskNo = result[1].trim();
+            case LOCATION:
+                if (result.length < 2) {
+                    throw new ErrorHandler(ErrorMessage.EMPTY_TASK_NUMBER);
+                }
+                this.taskNo = result[1].trim();
 
-            if (result.length < 3) {
-                throw new ErrorHandler(ErrorMessage.EMPTY_LOCATION_DESCRIPTION);
-            }
-            this.content = result[2].trim();
-
-            return new LocationCommand(this.taskNo, this.content);
-
+                if (result.length < 3) {
+                    throw new ErrorHandler(ErrorMessage.EMPTY_LOCATION_DESCRIPTION);
+                }
+                this.content = result[2].trim();
+                return new LocationCommand(this.taskNo, this.content);
             case MARKS:
                 if (result.length < 2) {
                     throw new ErrorHandler(ErrorMessage.EMPTY_TASK_NUMBER);
@@ -43,8 +41,8 @@ public class Parser {
 
                 return new MarksCommand(this.taskNo, this.content);
 
-        default:
-            return new DummyCommand();
+            default:
+                return new DummyCommand();
         }
 
     }

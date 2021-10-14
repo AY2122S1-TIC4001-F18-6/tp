@@ -7,11 +7,11 @@ import ui.Ui;
 
 public class MarksCommand extends Command {
     private final int taskNumber;
-    private final String Marks;
+    private final String marks;
 
     public MarksCommand(String taskNumber, String marks) throws ErrorHandler {
         this.taskNumber = this.pareTaskNumber(taskNumber);
-        this.Marks = marks;
+        this.marks = marks;
     }
 
     public void execute(Storage storage, Ui ui, TaskList taskList) {
