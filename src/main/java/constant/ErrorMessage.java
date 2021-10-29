@@ -36,4 +36,15 @@ public class ErrorMessage {
     public static final String EMPTY_APPOINTMENT_TIME = "OOPS!!! The appointment time is missing, missing '/at'";
     public static final String EMPTY_APPOINTMENT_LOCATION = "OOPS!!! The appointment location is missing, missing "
         + "'/l'";
+    public static final String INVALID_ASSIGNMENT_MARKS = "OOPS!!! The assignment marks format is invalid, please "
+            + "refer to this format '0-99'.";
+    public static final String INVALID_DATE = "OOPS!!! The date format is invalid, please "
+            + "refer to this format '22-09-2018'.";
+    public static final String INVALID_DIFFICULTY_LEVEL = "OOPS!!! The difficulty level is invalid, please "
+            + "refer to this format '1 to 5'.";
+    public static final String INVALID_PROGRESSION_LEVEL = "OOPS!!! The progression level is invalid, please "
+            + "refer to this format 'New, In Progress, Done'.";
+    public static final String EMPTY_ASSIGNMENT_DESCRIPTION = "OOPS!!! The assignment description cannot be empty.";
+    public static final String EMPTY_ASSIGNMENT_MARKS = "OOPS!!! The assignment due date is missing, missing '/due_on'";
+    public static final String EMPTY_ASSIGNMENT_DUE_DATE = "OOPS!!! The assignment marks is missing, missing '/l'";
 }

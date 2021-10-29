@@ -4,7 +4,8 @@ import exception.ErrorHandler;
 
 public enum CommandKeyWords {
     SET_LOCATION("SET_LOCATION"), BYE("BYE"), TODO("TODO"), DELETE("DELETE"), VIEW("VIEW"),
-    APPOINTMENT("APPOINTMENT"), SET_TIME("SET_TIME");
+    APPOINTMENT("APPOINTMENT"), SET_TIME("SET_TIME"), SET_MARKS("SET_MARKS"), DUE_DATES("DUE_DATES"),
+    DIFFICULTY_LEVEL("DIFFICULTY_LEVEL"), PROGRESS("PROGRESS"), ASSIGNMENT("ASSIGNMENT") ;
     private final String value;
 
     CommandKeyWords(String value) {
