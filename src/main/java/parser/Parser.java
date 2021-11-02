@@ -1,20 +1,11 @@
 package parser;
 
 import category.Category;
+import command.*;
 import command.category.AddCategory;
 import command.category.DeleteCategory;
 import command.category.TagCategory;
 import command.category.ViewCategory;
-import command.Command;
-import command.ViewCommand;
-import command.DoneCommand;
-import command.TodoCommand;
-import command.DeleteCommand;
-import command.LocationCommand;
-import command.ByeCommand;
-import command.AppointmentCommand;
-import command.DeleteCommand;
-import command.AppointmentTimeCommand;
 
 import constant.CommandKeyWords;
 import constant.ErrorMessage;
@@ -106,7 +97,6 @@ public class Parser {
             if (result.length < 2) {
                 throw new ErrorHandler(ErrorMessage.EMPTY_TASK_NUMBER);
             }
-
             return this.handleSetTime(result[1]);
         case BYE:
         default:

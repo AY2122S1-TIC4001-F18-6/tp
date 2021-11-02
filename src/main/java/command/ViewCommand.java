@@ -1,5 +1,6 @@
 package command;
 
+import exception.ErrorHandler;
 import ui.Ui;
 import storage.Storage;
 import tasklist.TaskList;
