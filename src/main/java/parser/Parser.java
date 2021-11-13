@@ -1,25 +1,24 @@
 package parser;
 
-import category.Category;
-import command.Command;
-import command.AppointmentCommand;
-import command.AppointmentTimeCommand;
-import command.AssignmentCommand;
-import command.ByeCommand;
-import command.DeleteCommand;
-import command.DoneCommand;
-import command.DueDateCommand;
-import command.LocationCommand;
-import command.ProgressionCommand;
 import command.SearchByDateCommand;
-import command.TaskProgressCommand;
-import command.TodoCommand;
-import command.ViewCommand;
 import command.SearchCommand;
 import command.category.AddCategory;
 import command.category.DeleteCategory;
 import command.category.TagCategory;
 import command.category.ViewCategory;
+import command.Command;
+import command.ViewCommand;
+import command.DoneCommand;
+import command.TodoCommand;
+import command.DeleteCommand;
+import command.LocationCommand;
+import command.ByeCommand;
+import command.AppointmentCommand;
+import command.AssignmentCommand;
+import command.TaskProgressCommand;
+import command.AppointmentTimeCommand;
+import command.ProgressionCommand;
+import command.DueDateCommand;
 
 import constant.CommandKeyWords;
 import constant.ErrorMessage;
@@ -27,7 +26,6 @@ import constant.ErrorMessage;
 import exception.ErrorHandler;
 
 public class Parser {
-    private final Category category = new Category();
     private String content;
     private String taskNo;
 

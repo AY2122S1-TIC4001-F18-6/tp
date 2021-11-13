@@ -55,5 +55,4 @@ public class StringUtils {
         }
         return output.trim();
     }
-
 }

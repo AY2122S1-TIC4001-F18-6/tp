@@ -25,9 +25,9 @@ public class SearchCommand extends Command {
         if (param.length > 1) {
             if (param[1].equalsIgnoreCase("APPOINTMENT") || param[1].equalsIgnoreCase("TODO")) {
                 searchType = "taskType";
-            } else if (isValidDate(param[1])) {
+            }  else if (isValidDate(param[1])) {
                 searchType = "date";
-            } else if (isCategory(convertArrayToString(param, true))) {
+            }  else if (isCategory(convertArrayToString(param, true))) {
                 searchType = "category";
             }
         }
@@ -35,7 +35,7 @@ public class SearchCommand extends Command {
 
     public void execute(TaskList list, Ui ui, Storage storage) throws ParseException, ErrorHandler {
         switch (searchType) {
-        case ("taskType"):
+        case("taskType"):
             ui.printByTaskType(list, param[1].toUpperCase());
             break;
         case ("date"):
