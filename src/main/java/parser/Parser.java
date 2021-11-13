@@ -107,8 +107,7 @@ public class Parser {
             }
             if (result[1].contains("--date")) {
                 return this.handleSearch(result[1]);
-            }
-            else {
+            } else {
                 return new SearchCommand(input);
             }
 
@@ -195,7 +194,7 @@ public class Parser {
             throw new ErrorHandler(ErrorMessage.INVALID_SEARCH_CATEGORY);
         }
     }
-  
+
     private Command handleDeadLine(String input) throws ErrorHandler {
         String[] inputContent = input.split(" ", 2);
 

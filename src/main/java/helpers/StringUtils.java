@@ -18,13 +18,13 @@ public class StringUtils {
      */
     public static String convertArrayToString(String[] input) throws ErrorHandler {
         return concatenate(input, 0);
-    };
+    }
 
     /**
      * Converts a String array to a singular String.
      * Assumes that the method will be used to construct a sentence
      *
-     * @param input an array of String
+     * @param input           an array of String
      * @param isIgnoreCommand determines if method should concatenate array from element 0 or 1 where;
      *                        true -> starts from element 1.
      *                        false -> starts from element 0.
@@ -33,9 +33,9 @@ public class StringUtils {
     public static String convertArrayToString(String[] input, boolean isIgnoreCommand) throws ErrorHandler {
         if (isIgnoreCommand) {
             return concatenate(input, 1);
-        };
+        }
         return concatenate(input, 0);
-    };
+    }
 
     /**
      * Concatenates the elements in a string array and adds a space between each element.
@@ -54,5 +54,6 @@ public class StringUtils {
             output += input[i] + " ";
         }
         return output.trim();
-    };
+    }
+
 }

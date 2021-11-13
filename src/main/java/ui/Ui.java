@@ -11,8 +11,6 @@ import java.util.ArrayList;
 import static helpers.DateConverter.removeTime;
 
 
-
-
 /**
  * Ui class is only for printing message.
  */
@@ -95,7 +93,7 @@ public class Ui {
     /**
      * Prints a list of task filtered based on a specific task type.
      *
-     * @param list existing task list.
+     * @param list  existing task list.
      * @param input task to be filtered from the list.
      */
     public void printByTaskType(TaskList list, String input) {
@@ -104,8 +102,7 @@ public class Ui {
 
         if (input.equals("TODO")) {
             type = "T";
-        }
-        else {
+        } else {
             type = "A";
         }
 
@@ -144,7 +141,7 @@ public class Ui {
     /**
      * Prints a list of task filtered based on a specific category.
      *
-     * @param list existing task list.
+     * @param list     existing task list.
      * @param category category to be filtered from the list.
      */
     public void printByCategory(TaskList list, String category) {
@@ -164,7 +161,7 @@ public class Ui {
     /**
      * Prints a single task with a leading number.
      *
-     * @param task existing task.
+     * @param task  existing task.
      * @param index leading number.
      */
     public void printTask(Task task, int index) {
@@ -176,7 +173,7 @@ public class Ui {
     /**
      * Prints a task from the task list based on the task index.
      *
-     * @param list existing task list.
+     * @param list  existing task list.
      * @param index task index.
      */
     public void printByTask(TaskList list, int index) {

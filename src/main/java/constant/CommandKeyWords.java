@@ -4,7 +4,8 @@ import exception.ErrorHandler;
 
 public enum CommandKeyWords {
     SET_LOCATION("SET_LOCATION"), DELETE("DELETE"),
-    APPOINTMENT("APPOINTMENT"), SET_TIME("SET_TIME"), CATEGORY("CATEGORY"), HOMEWORK("HOMEWORK"), DIFFICULTY_LEVEL("DIFFICULTY_LEVEL"), PROGRESS("PROGRESS"), CHANGE("CHANGE"),
+    APPOINTMENT("APPOINTMENT"), SET_TIME("SET_TIME"), CATEGORY("CATEGORY"), HOMEWORK("HOMEWORK"),
+    DIFFICULTY_LEVEL("DIFFICULTY_LEVEL"), PROGRESS("PROGRESS"), CHANGE("CHANGE"),
     TIMEFRAME("TIMEFRAME"), SEARCH("SEARCH"), DONE("DONE"), VIEW("VIEW"), TODO("TODO"),
     BYE("BYE");
 
@@ -59,7 +60,7 @@ public enum CommandKeyWords {
      * Correct user's input Command in case of typo/misspelling.
      *
      * @param input User's input.
-     * @param v command
+     * @param v     command
      * @return an existing Command Keyword
      */
     private static CommandKeyWords autoCorrect(String input, CommandKeyWords v) {
