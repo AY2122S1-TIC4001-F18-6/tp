@@ -14,7 +14,7 @@ import static helpers.DateConverter.isValidDate;
 import static helpers.StringUtils.convertArrayToString;
 
 /**
- * Search task list based on certain parameters
+ * Search task list based on certain parameters.
  */
 public class SearchCommand extends Command {
     String searchType = "nil";
